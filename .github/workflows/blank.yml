@@ -34,6 +34,14 @@ jobs:
 
       - name: Metrics embed
       uses: lowlighter/metrics@v3.34
+
+      name: CodeQL config
+queries:
+  - uses: security-and-quality
+paths-ignore:
+  - copyrighted/**
+  - .github/scripts/quickstart/**
+  - source/plugins/community/splatoon/s3si/**
             
         run: |
           echo Add other actions to build,
